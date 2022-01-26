@@ -3,7 +3,7 @@ import { Link, useParams } from "react-router-dom";
 import Footer from "../Shared/Footer/Footer";
 import Navigation from "../Shared/Navigation/Navigation";
 import "./SingleBlog.css";
-import OrderBanner from "./OrderBanner/OrderBanner";
+import SingleBlogBanner from "./SingleBlogBanner/SingleBlogBanner";
 
 const SingleBlog = () => {
   
@@ -22,7 +22,7 @@ const SingleBlog = () => {
   return (
     <>
     <Navigation></Navigation>
-    <OrderBanner></OrderBanner>
+    <SingleBlogBanner></SingleBlogBanner>
     <div className="container-fluid" style={{ backgroundColor: "#dddddd" }}>
       <div className="row  ">
         <div className="col-lg-6 col-md-12 col-sm-12 mt-3">

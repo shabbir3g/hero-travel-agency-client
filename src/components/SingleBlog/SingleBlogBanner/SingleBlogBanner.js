@@ -1,8 +1,8 @@
 import React from "react";
 import { Container } from "react-bootstrap";
-import "./OrderBanner.css";
+import "./SingleBlogBanner.css";
 
-const OrderBanner = () => {
+const SingleBlogBanner = () => {
   return (
     <div className="container-bg">
       <Container>
@@ -12,4 +12,4 @@ const OrderBanner = () => {
   );
 };
 
-export default OrderBanner;
+export default SingleBlogBanner;
