@@ -5,14 +5,12 @@ import {
 } from "react-router-dom";
 import TopHeader from '../../Shared/TopHeader/TopHeader';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faCalendarPlus, faClipboard, faShoppingBag, faTachometerAlt, faTasks, faTools, faUsersCog } from '@fortawesome/free-solid-svg-icons'
+import { faCalendarPlus, faClipboard, faTachometerAlt, faTools, faUsersCog } from '@fortawesome/free-solid-svg-icons'
 import useAuth from '../../../hooks/useAuth';
 
-const ShoppingBag = <FontAwesomeIcon icon={faShoppingBag} />
 const Clipboard = <FontAwesomeIcon icon={faClipboard} />
 const TachometerAlt = <FontAwesomeIcon icon={faTachometerAlt} />
 const UsersCog = <FontAwesomeIcon icon={faUsersCog} />
-const Tasks = <FontAwesomeIcon icon={faTasks} />
 const CalendarPlus = <FontAwesomeIcon icon={faCalendarPlus} />
 const Tools = <FontAwesomeIcon icon={faTools} />
 
@@ -27,18 +25,13 @@ const Dashboard = () => {
                         <nav className="dashboard-menu">
                             <ul>
                                 <li><Link to={`/dashboard`}>{TachometerAlt} <span>Dashboard</span></Link></li>
-                                {/* {!admin && <> */}
-                                <li><Link to={`/dashboard/myOrder`}>{ShoppingBag} <span>My Orders</span></Link></li>
-                                <li><Link to={`/dashboard/addReview`}>{Clipboard} <span>Review</span></Link></li>
-                                {/* <li><Link to={`/dashboard/pay`}>{HandHoldingUsd} <span>Pay</span></Link></li> */}
-                                {/* </>} */}
-                                 
+                               
                                 {admin && <>
-                                <li><Link to={`/dashboard/manageAllOrders`}>{Tasks}<span >Manage All Orders</span></Link></li>
-                                <li><Link to={`/dashboard/addProduct`}>{CalendarPlus} <span>Add A Product</span></Link></li>
+                                <li><Link to={`/dashboard/ManageBlogs`}>{Tools} <span>All Blogs</span></Link></li>
+                                <li><Link to={`/dashboard/AddNewBlog`}>{CalendarPlus} <span>Add New Blog</span></Link></li>
                                 <li><Link to={`/dashboard/makeAdmin`}>{UsersCog} <span>Make Admin</span></Link></li>
-                                <li><Link to={`/dashboard/manageProducts`}>{Tools} <span>Manage Products</span></Link></li>
                                 </>}
+                                <li><Link to={`/dashboard/addReview`}>{Clipboard} <span>Review</span></Link></li>
 
                             </ul>
                         </nav>

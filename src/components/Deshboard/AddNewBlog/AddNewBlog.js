@@ -3,11 +3,11 @@ import { useForm } from "react-hook-form";
 import axios from 'axios';
 import React, { useState } from 'react';
 
-const AddProduct = () => {
+const AddNewBlog = () => {
     const [success, setSuccess] = useState(false);
     const { register, handleSubmit, reset, formState: { errors } } = useForm();
     const onSubmit = data => {
-        axios.post('http://localhost:5000/services', data)
+        axios.post('http://localhost:5000/blogs', data)
             .then(res => {
                 if (res.data.insertedId) {
                     setSuccess(true);
@@ -17,7 +17,7 @@ const AddProduct = () => {
     }
     return (
         <div>
-            <h2 className="text-center mt-5">Add A Resort</h2>
+            <h2 className="text-center mt-5">Add New Blog</h2>
             <div className="add-product">
                 <Container>
                     <Form onSubmit={handleSubmit(onSubmit)}>
@@ -49,7 +49,7 @@ const AddProduct = () => {
                         </div>}
                         {errors.exampleRequired && <span>This field is required</span>}
                         <Button className="fw-bold" variant="primary" type="submit">
-                            Add Place
+                            Publish Blog
                         </Button>
                     </Form>
                 </Container>
@@ -58,4 +58,4 @@ const AddProduct = () => {
     );
 };
 
-export default AddProduct;
+export default AddNewBlog;

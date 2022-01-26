@@ -54,14 +54,14 @@
 /* testimonial style  */
 
 .testimonial {
-  border-right: 4px solid #2a3d7d;
-  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.1);
+  /* border-right: 4px solid #2a3d7d; */
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
   padding: 30px 30px 30px 130px;
   margin: 0 15px 30px 15px;
   overflow: hidden;
   position: relative;
 }
-.testimonial:before {
+/* .testimonial:before {
   content: "";
   position: absolute;
   bottom: -4px;
@@ -80,7 +80,7 @@
   border-left: 25px solid transparent;
   border-right: 25px solid transparent;
   transform: rotate(135deg);
-}
+} */
 .testimonial .pic {
   display: inline-block;
   width: 80px;

@@ -5,7 +5,6 @@
   padding: 0px 0px;
   box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.1);
   transition: all ease-in-out 0.5s;
-  background: #1a1814;
 }
 .card-body {
   position: relative;
@@ -14,39 +13,36 @@
 }
 .box:hover .card-body {
   position: relative;
-  bottom: 25px;
+  bottom: 10px;
 }
 .box:hover {
-  background: #cea256;
+  background: #30d9ff;
   box-shadow: 10px 15px 30px rgba(0, 0, 0, 0.18);
 }
-.services-head {
+.blog-head {
   color: #cea256;
-  text-align: center;
+  text-align: left;
   margin-bottom: 20px;
 }
 
-.services-img {
+.blog-img {
   width: 100%px;
   height: 50%px;
   margin: auto;
-  border: 2px solid #daaa57;
+  border: 2px solid #cea256;
   background-color: rgb(189, 187, 187);
   height: 230px;
   object-fit: cover;
 }
 
-.services-img:hover {
-  background-color: #daaa57;
+.blog-img:hover {
+  background-color: #cea256;
 }
 
-.services-title {
+.blog-title {
   text-align: left;
   margin-top: 25px;
   font-size: 23px;
-  color: #fff;
-  letter-spacing: 1.5px;
-  text-transform: uppercase;
 }
 .box p {
   color: #aaaaaa;
@@ -62,8 +58,8 @@
 .card-btn {
   padding: 7px 17px;
   background-color: #fff;
-  border: 1px solid #f3a215;
-  color: #f3a215;
+  border: 1px solid #cea256;
+  color: #cea256;
   text-decoration: none;
   border-radius: 20px;
   font-weight: 500;

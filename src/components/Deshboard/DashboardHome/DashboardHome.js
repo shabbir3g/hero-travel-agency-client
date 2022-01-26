@@ -23,7 +23,7 @@ const DashboardHome = () => {
     const [products, setProducts] = useState([]);
 
     useEffect(() => {
-        const url = `http://localhost:5000/services`;
+        const url = `http://localhost:5000/blogs`;
         fetch(url)
             .then(res => res.json())
             .then(data => setProducts(data))
@@ -90,7 +90,7 @@ const DashboardHome = () => {
                                 </div>
                                 <div className="col-md-9 text-right">
                                     <div className='huge'>{products?.length}</div>
-                                    <div className="under-number">Services</div>
+                                    <div className="under-number">Blogs</div>
                                 </div>
                             </div>
                         </div>

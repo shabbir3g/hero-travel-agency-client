@@ -7,12 +7,12 @@ import "./Blog.css";
 
 
 const Blog = () => {
-  const [blog, setBlog] = useState([]);
+  const [blogs, setBlogs] = useState([]);
 
   useEffect(() => {
     fetch("http://localhost:5000/blogs")
       .then((res) => res.json())
-      .then((data) => setBlog(data));
+      .then((data) => setBlogs(data));
   }, []);
   return (
       <div className="bg-service">
@@ -22,28 +22,28 @@ const Blog = () => {
         <p>This Our Blogs from our valuable Customer, those who get from BD Travel agency. We every time provide best quality Blogs to our cusotmer.</p>
         </div>
         <Row xs={1} md={3} className="g-4">
-          {blog.map((service, index) => (
+          {blogs.map((blog, index) => (
             <Col>
               <Card className="box text-center">
                 <Card.Img
-                  className="Blogs-img"
+                  className="blog-img"
                   variant="top"
-                  src={service.image}
+                  src={blog.image}
                 />
                 <Card.Body>
-                  <Card.Title className="Blogs-title">
-                    {service.title}
+                  <Card.Title className="blog-title">
+                    {blog.title}
                   </Card.Title>
-                  {/* <p> {service.description.slice(0, 85)}</p> */}
-                 <div className="service-meta"> 
+                  {<p> {blog.description.slice(0, 85)}</p>}
+                 <div className="blog-meta"> 
                
                  <Card.Text>
-                      <h5>Cost: {service.cost}</h5>
+                      <h5>Cost: {blog.cost}</h5>
                     </Card.Text>
                 
 
-                    <Link className="card-btn" to={`/order/${blog._id}`}>
-                      Order Now
+                    <Link className="card-btn" to={`/SingleBlog/${blog._id}`}>
+                      Read More
                     </Link>
                  </div>
                 </Card.Body>
