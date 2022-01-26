@@ -1,0 +1,59 @@
+ul.bd-travel-tourguide-social {
+  margin-top: 20px;
+  padding: 0;
+  list-style: none;
+}
+ul.bd-travel-tourguide-social li {
+  display: inline-block;
+}
+ul.bd-travel-tourguide-social li a {
+  display: block;
+  color: #fff;
+  width: 40px;
+  height: 40px;
+  margin-right: 8px;
+  text-align: center;
+  padding: 7px;
+  border-radius: 50%;
+  border: 2px solid #fff;
+  transition-duration: 0.5s;
+}
+ul.bd-travel-tourguide-social li a:hover {
+  background-color: #fff;
+  color: #000;
+  border: 2px solid #fff;
+}
+ul.bd-travel-tourguide-social li a svg {
+  font-size: 20px;
+}
+.guide-info h3,
+.guide-info h5 {
+  color: #fff;
+}
+.tour-guide img {
+  width: 100%;
+}
+.tour-guide {
+  text-align: center;
+  position: relative;
+  overflow: hidden;
+}
+.guide-info {
+  position: absolute;
+  top: 0;
+  width: 94%;
+  height: 100%;
+  padding-top: 125px;
+  opacity: 0;
+  transition-duration: 0.5s;
+}
+.tour-guide:hover .guide-info {
+  position: absolute;
+  top: 0;
+  width: 94%;
+  height: 100%;
+  padding-top: 125px;
+  background: rgba(0, 0, 0, 0.7);
+  opacity: 1;
+  cursor: pointer;
+}

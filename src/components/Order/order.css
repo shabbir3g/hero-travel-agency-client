@@ -1,0 +1,94 @@
+.order-details-container {
+  width: 60%;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+}
+.order-container .order-main-container input[type="email"],
+.order-container .order-main-container input[type="text"],
+.order-container .order-main-container input[type="password"],
+.order-container .order-main-container input[type="number"],
+select {
+  padding: 12px 10px;
+}
+.order-details {
+  width: 90%;
+}
+
+.order-details .product-title {
+  font-weight: 500;
+  font-size: 25px;
+  padding: 5% 0;
+}
+
+.order-details hr {
+  margin-top: 2%;
+  border-top: 1px solid #d3d0d0;
+}
+
+.order-details .custom-select {
+  width: 300px;
+}
+
+.order-details #cars:focus {
+  outline: none !important;
+  box-shadow: 0 0 5px #719ece;
+  border: 1px solid #ccc;
+}
+
+.order-details .custom-select select {
+  background: #eae9e5;
+  border: 1px solid #dfdfdf;
+  color: #6f6f6f;
+}
+
+.order-details .order-number {
+  /* display: flex;F */
+  width: 60%;
+}
+
+.order-details .order-number p {
+  border: 1px solid;
+  width: 34px;
+  text-align: center;
+  padding: 10px;
+}
+.order-details .order-number .increase-decrease {
+  display: flex;
+}
+
+.order-details .order-number .order-button-deActive {
+  background-color: #707070;
+  border: none;
+  color: white;
+  padding: 7px 15px;
+  text-align: center;
+  border-radius: 5px;
+  font-size: 16px;
+  font-weight: 500;
+  cursor: no-drop;
+  text-decoration: none;
+}
+
+.order-details .order-number .order-button {
+  background-color: #7180df;
+  border: none;
+  color: white;
+  padding: 7px 15px;
+  text-align: center;
+  border-radius: 5px;
+  font-size: 16px;
+  font-weight: 500;
+  cursor: pointer;
+  text-decoration: none;
+  display: block;
+}
+
+.order-details .order-number .order-button:hover {
+  background-color: #7180df;
+}
+.order-details .order-number .increase-order:hover {
+  background-color: #7180df;
+  color: #fff;
+  cursor: pointer;
+}

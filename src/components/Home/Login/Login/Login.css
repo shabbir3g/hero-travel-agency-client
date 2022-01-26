@@ -1,0 +1,11 @@
+.login-form {
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+.login-form form input {
+  margin-bottom: 10px;
+}
+.btn-dark {
+  padding: 10px;
+}

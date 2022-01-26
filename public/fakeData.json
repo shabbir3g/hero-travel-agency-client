@@ -1,0 +1,53 @@
+[
+    {
+      "id": 1,
+      "title": "Bandorbon",
+      "description":"One method of retinal detachment repair is pneumatic. In this procedure, a gas bubble is injected into the eye detachment repair is pneumatic. In this procedure, a gas bubble is injected into the eye. " ,
+      "image": "https://i.ibb.co/sVTNm5r/1.jpg" ,
+      "cost":"1200"
+     
+    },
+    {
+      "id": 2,
+      "title": "Sylet",
+      "description": "The cornea is the transparent front part of the eye that covers the iris, pupil. Along with the  chamber and lens front part of the eye that covers the iris, pupil. Along with the  chamber and lens.",
+      "image": "https://i.ibb.co/gmRY9P2/2.jpg",
+      "cost":"1310"
+      
+    },
+    {
+      "id": 3,
+      "title": "Rangamati",
+      "description": "A procedure called  occlusion can be used to permanently or temporarily close drainage channels that uses a laser to cut tissue. Examples include the use of a laser scalpe Examples include the use of a laser .", 
+      "image": "https://i.ibb.co/y6XBtpG/3.jpg",
+      "cost":"1120"
+  
+    },
+    {
+      "id": 4,
+      "title": "Sundorbon",
+      "description":"A cornea transplant is an operation to remove all or part of a damaged cornea and replace it with healthy part of the eye that covers the iris, pupil. Along with the  chamber and lens.." ,
+      "image": "https://i.ibb.co/Mn0k1vD/4.jpg",
+      "cost":"1130"
+      
+    },
+    {
+      "id": 5,
+      "title": "Khagrasori",
+      "description": "The act of performing surgery may be called a surgical procedure, operation, In this context, the verb surgery.surgery may be called a surgical procedure, operation, In this context, the verb surgery.",
+      "image": "https://i.ibb.co/FY5kHTS/5.jpg",
+      "cost":"1250"
+   
+    },
+    {
+      "id": 6,
+      "title": "Sent Martine",
+      "description": "Laser surgery is a type of surgery that uses a laser to cut tissue. Examples include the use of a laser scalpe that uses a laser to cut tissue. Examples include the use of a laser scalpe.",
+      "image": "https://i.ibb.co/n0XH1cV/6.jpg",
+      "cost":"1360"
+      
+    }
+    
+    
+]
+  

@@ -1,0 +1,183 @@
+@import url("https://fonts.googleapis.com/css2?family=Oswald:wght@700&family=Rubik&display=swap");
+/* Common style  */
+body,
+p {
+  font-family: "Rubik", sans-serif;
+  font-size: 15px;
+  line-height: 26px;
+}
+a,
+a:hover {
+  text-decoration: none !important;
+  color: #383a4e;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: 700;
+  font-family: "Oswald", sans-serif;
+}
+.btn-link.btn:hover {
+  background-color: transparent !important;
+}
+.margin-top-200 {
+  margin-top: 200px;
+}
+.spinner-border {
+  display: block !important;
+  text-align: center !important;
+  margin: auto !important;
+}
+
+.section-title {
+  width: 50%;
+}
+/* About Style  */
+
+h1.title-main {
+  color: #f0f0f0;
+  font-size: 60px;
+  text-transform: uppercase;
+  margin-bottom: 10px;
+  font-weight: 400;
+}
+.about-text > h3 {
+  color: #252c41;
+  font-size: 30px;
+  text-transform: uppercase;
+  margin-bottom: 16px;
+  font-weight: 600;
+  font-style: italic;
+}
+/* header style  */
+.header-logo {
+  width: 255px;
+}
+
+.st-top-header-list svg {
+  width: 18px;
+  margin-right: 7px;
+  fill: #b5b5b5;
+}
+.st-top-header .st-top-header-in {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  transition: all 0.4s ease;
+}
+.st-top-header-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-wrap: wrap;
+}
+.st-top-header-list li {
+  margin-right: 35px;
+  color: #fff;
+  font-size: 14px;
+  display: flex;
+  align-items: center;
+}
+.st-top-header-list li a {
+  color: #fff;
+}
+.st-top-header-btn {
+  font-size: 14px;
+  color: #fff;
+  margin-left: 18px;
+}
+.st-top-header-btn img {
+  width: 35px;
+  height: 35px;
+  border-radius: 50%;
+}
+.st-top-header-btn:hover {
+  opacity: 0.8;
+}
+.logout-button {
+  cursor: pointer;
+}
+.st-top-header {
+  overflow: hidden;
+  padding: 0;
+  background: #1d2327;
+  min-height: 35px;
+  display: flex;
+  align-items: center;
+  position: fixed;
+  width: 100%;
+  top: 0;
+}
+
+.st-top-header-admin {
+  overflow: hidden;
+  padding: 0;
+  background: #1d2327;
+  min-height: 35px;
+  display: flex;
+  align-items: center;
+  position: fixed;
+  left: 0;
+  right: 0;
+  top: 0;
+}
+
+.header-area {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 999;
+  background-color: #0a3d6286;
+}
+.normal-page .header-area {
+  background-color: #0a3d62;
+}
+.header-navbar .ms-auto a {
+  color: #fff !important;
+}
+/* .bg-img-5 {
+  background-image: url(./images/4.jpg);
+  background-position: center center;
+  background-size: cover;
+} */
+.py-80 {
+  padding: 80px 0;
+}
+.overlay-secondery-opacity-65 {
+  background: #00000086 !important;
+  height: 100%;
+  width: 100%;
+}
+.pages-link {
+  float: right;
+  margin-top: 8px;
+}
+.pages-link li {
+  float: left;
+  margin-right: 5px;
+  line-height: 35px;
+  list-style: none;
+  color: #fff;
+}
+.pages-link li a {
+  color: #fff;
+}
+.pages-link li:last-child {
+  color: #f4ca24 !important;
+}
+#page-banner.log-in {
+  margin-top: 194.5px;
+}
+#page-banner.log-out {
+  margin-top: 128.5px;
+}
+.home-slide {
+  position: relative;
+  top: -200px;
+}
