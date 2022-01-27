@@ -16,8 +16,9 @@
   bottom: 10px;
 }
 .box:hover {
-  background: #30d9ff;
+  background-color: transparent;
   box-shadow: 10px 15px 30px rgba(0, 0, 0, 0.18);
+  color: #000;
 }
 .blog-head {
   color: #cea256;
@@ -29,20 +30,16 @@
   width: 100%px;
   height: 50%px;
   margin: auto;
-  border: 2px solid #cea256;
   background-color: rgb(189, 187, 187);
   height: 230px;
   object-fit: cover;
 }
-
-.blog-img:hover {
-  background-color: #cea256;
-}
-
 .blog-title {
-  text-align: left;
-  margin-top: 25px;
   font-size: 23px;
+  font-weight: bold;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 .box p {
   color: #aaaaaa;
@@ -51,10 +48,7 @@
   padding: 0;
   text-align: justify;
 }
-.box:hover h3,
-.box:hover p {
-  color: #fff;
-}
+
 .card-btn {
   padding: 7px 17px;
   background-color: #fff;
@@ -72,6 +66,20 @@
   margin-top: 20px;
 }
 .card-btn {
-  display: block;
+  display: inline-block;
   height: 43px;
+}
+.pagination {
+  margin: 30px;
+}
+.pagination button {
+  padding: 10px 20px;
+  margin-right: 20px;
+  display: inline-block;
+  cursor: pointer;
+  border: none;
+}
+.pagination .selected {
+  background-color: #ff7602;
+  color: #fff;
 }

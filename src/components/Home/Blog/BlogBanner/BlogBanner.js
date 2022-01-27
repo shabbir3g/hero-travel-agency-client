@@ -6,7 +6,7 @@ const BlogBanner = () => {
   return (
     <div className="container-bg">
       <Container>
-        <h2 className="BlogBanner">Our Service</h2>
+        <h2 className="BlogBanner">Our Blogs</h2>
       </Container>
     </div>
   );

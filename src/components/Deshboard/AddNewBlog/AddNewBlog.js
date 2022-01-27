@@ -41,7 +41,7 @@ const AddNewBlog = () => {
                         <Row className="mb-3">
                             <Form.Group as={Col} controlId="Description">
                                 <Form.Label><b>Description</b></Form.Label>
-                                <textarea style={{ height: '100px' }} type="text" placeholder="Description"   {...register("description", { required: true })} />
+                                <textarea style={{ height: '150px' }} type="text" placeholder="Description"   {...register("description", { required: true })} />
                             </Form.Group>
                         </Row>
                         {success && <div className="alert alert-success" role="alert">

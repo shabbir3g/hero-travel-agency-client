@@ -1,12 +1,11 @@
 import React, { useEffect, useState } from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faArrowAltCircleRight, faClipboard, faShoppingBag, faTasks, faUser, } from '@fortawesome/free-solid-svg-icons'
+import { faArrowAltCircleRight, faClipboard, faShoppingBag, faUser, } from '@fortawesome/free-solid-svg-icons'
 import { Link } from 'react-router-dom';
 
 const User = <FontAwesomeIcon icon={faUser} />
 const ShoppingBag = <FontAwesomeIcon icon={faShoppingBag} />
 const Clipboard = <FontAwesomeIcon icon={faClipboard} />
-const Tasks = <FontAwesomeIcon icon={faTasks} />
 const ArrowAltCircleRight = <FontAwesomeIcon icon={faArrowAltCircleRight} />
 
 const DashboardHome = () => {
@@ -26,7 +25,7 @@ const DashboardHome = () => {
         const url = `http://localhost:5000/blogs`;
         fetch(url)
             .then(res => res.json())
-            .then(data => setProducts(data))
+            .then(data => setProducts(data.blogs))
     }, []);
 
     const [reviews, setReviews] = useState([]);
@@ -57,7 +56,7 @@ const DashboardHome = () => {
             <h2 className="text-center my-5">Welcome to Dashboard</h2>
 
             <div className="row">
-                <div className="col-lg-3 col-md-3">
+                <div className="col-lg-4 col-md-4">
                     <div className="panel panel-primary">
                         <div className="panel-heading">
                             <div className="row">
@@ -81,7 +80,7 @@ const DashboardHome = () => {
                 </div>
 
 
-                <div className="col-lg-3 col-md-3">
+                <div className="col-lg-4 col-md-4">
                     <div className="panel panel-green">
                         <div className="panel-heading">
                             <div className="row">
@@ -106,7 +105,7 @@ const DashboardHome = () => {
 
 
 
-                <div className="col-lg-3 col-md-3">
+                <div className="col-lg-4 col-md-4">
                     <div className="panel panel-yellow">
                         <div className="panel-heading">
                             <div className="row">
@@ -130,29 +129,6 @@ const DashboardHome = () => {
                 </div>
 
 
-
-                <div className="col-lg-3 col-md-3">
-                    <div className="panel panel-red">
-                        <div className="panel-heading">
-                            <div className="row">
-                                <div className="col-md-3">
-                                    {Tasks}
-                                </div>
-                                <div className="col-md-9 text-right">
-                                    <div className='huge'>{orders?.length}</div>
-                                    <div className="under-number">All Order</div>
-                                </div>
-                            </div>
-                        </div>
-                        <Link to="/">
-                            <div className="panel-footer">
-                                <span className="pull-left red">View Details</span>
-                                <span className="pull-right red">{ArrowAltCircleRight}</span>
-                                <div className="clearfix"></div>
-                            </div>
-                        </Link>
-                    </div>
-                </div>
             </div>
 
         </div>
