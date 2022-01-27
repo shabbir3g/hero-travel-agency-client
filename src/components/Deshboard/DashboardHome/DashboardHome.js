@@ -13,7 +13,7 @@ const DashboardHome = () => {
     const [allUser, setAllUser] = useState([]);
 
     useEffect(() => {
-        const url = `http://localhost:5000/users`;
+        const url = `https://serene-mesa-56595.herokuapp.com/users`;
         fetch(url)
             .then(res => res.json())
             .then(data => setAllUser(data))
@@ -22,7 +22,7 @@ const DashboardHome = () => {
     const [products, setProducts] = useState([]);
 
     useEffect(() => {
-        const url = `http://localhost:5000/blogs`;
+        const url = `https://serene-mesa-56595.herokuapp.com/blogs`;
         fetch(url)
             .then(res => res.json())
             .then(data => setProducts(data.blogs))
@@ -33,7 +33,7 @@ const DashboardHome = () => {
 
 
     useEffect(() => {
-        const url = `http://localhost:5000/review`;
+        const url = `https://serene-mesa-56595.herokuapp.com/review`;
         fetch(url)
             .then(res => res.json())
             .then(data => setReviews(data))
@@ -42,7 +42,7 @@ const DashboardHome = () => {
     const [orders, setOrders] = useState();
 
     useEffect(() => {
-        fetch(`http://localhost:5000/my-orders`)
+        fetch(`https://serene-mesa-56595.herokuapp.com/my-orders`)
             .then((res) => res.json())
             .then((data) => setOrders(data))
 

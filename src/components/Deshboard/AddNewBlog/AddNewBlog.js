@@ -7,7 +7,7 @@ const AddNewBlog = () => {
     const [success, setSuccess] = useState(false);
     const { register, handleSubmit, reset, formState: { errors } } = useForm();
     const onSubmit = data => {
-        axios.post('http://localhost:5000/blogs', data)
+        axios.post('https://serene-mesa-56595.herokuapp.com/blogs', data)
             .then(res => {
                 if (res.data.insertedId) {
                     setSuccess(true);

@@ -13,7 +13,7 @@ const MakeAdmin = () => {
 
         e.preventDefault();
         const user = { email };
-        fetch('http://localhost:5000/users/admin', {
+        fetch('https://serene-mesa-56595.herokuapp.com/users/admin', {
             method: 'PUT',
             headers: {
                 'authorization': `Bearer ${token}`,

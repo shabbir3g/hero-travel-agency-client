@@ -14,7 +14,7 @@ const ManageBlogs = () => {
 
 
     useEffect(() => {
-        fetch(`http://localhost:5000/blogs`)
+        fetch(`https://serene-mesa-56595.herokuapp.com/blogs`)
             .then((res) => res.json())
             .then((data) => setOrders(data))
 
@@ -33,7 +33,7 @@ const ManageBlogs = () => {
     const handleDeleteUser = id => {
         const proceed = window.confirm('Are you sure, You want to delete?');
         if (proceed) {
-            const url = `http://localhost:5000/blogs/${id}`;
+            const url = `https://serene-mesa-56595.herokuapp.com/blogs/${id}`;
             fetch(url, {
                 method: 'DELETE'
 

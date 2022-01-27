@@ -15,7 +15,7 @@ const Reviews = () => {
  
 
     useEffect(() => {
-        const url = `http://localhost:5000/review`;
+        const url = `https://serene-mesa-56595.herokuapp.com/review`;
         fetch(url)
         .then(res=> res.json())
         .then(data =>setReviews(data) )

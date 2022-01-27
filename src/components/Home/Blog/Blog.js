@@ -13,7 +13,7 @@ const Blog = () => {
 
 
   useEffect(() => {
-    fetch(`http://localhost:5000/blogs?page=${page}&&size=${size}`)
+    fetch(`https://serene-mesa-56595.herokuapp.com/blogs?page=${page}&&size=${size}`)
       .then((res) => res.json())
       .then((data) => {
         setBlogs(data.blogs);

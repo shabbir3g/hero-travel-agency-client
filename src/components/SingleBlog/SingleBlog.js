@@ -12,7 +12,7 @@ const SingleBlog = () => {
   const [singleBlog, setSingleBlog] = useState([]);
 
   useEffect(() => {
-    fetch(`http://localhost:5000/blogs/${_id}`)
+    fetch(`https://serene-mesa-56595.herokuapp.com/blogs/${_id}`)
       .then((res) => res.json())
       .then((data) => setSingleBlog(data));
   }, [_id]);

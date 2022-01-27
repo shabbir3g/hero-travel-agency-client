@@ -7,7 +7,7 @@ const TopRatedSpot = () => {
 
 
     useEffect(() => {
-        fetch(`http://localhost:5000/blogs`)
+        fetch(`https://serene-mesa-56595.herokuapp.com/blogs`)
           .then((res) => res.json())
           .then((data) => {
             setBlogs(data.blogs);
