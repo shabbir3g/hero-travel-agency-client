@@ -16,7 +16,7 @@ const ManageBlogs = () => {
     useEffect(() => {
         fetch(`https://serene-mesa-56595.herokuapp.com/blogs`)
             .then((res) => res.json())
-            .then((data) => setOrders(data))
+            .then((data) => setOrders(data.blogs))
 
     }, [user?.email]);
 

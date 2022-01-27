@@ -9,7 +9,7 @@ const Blog = () => {
   const [blogs, setBlogs] = useState([]);
   const [pageCount, setPageCount] = useState(0);
   const [page, setPage] = useState(0);
-  const size = 6;
+  const size = 10;
 
 
   useEffect(() => {
@@ -18,7 +18,7 @@ const Blog = () => {
       .then((data) => {
         setBlogs(data.blogs);
         const count = data.count;
-        const pageNumber = Math.ceil(count/3);
+        const pageNumber = Math.ceil(count/size);
         setPageCount(pageNumber);
       });
   }, [page]);
